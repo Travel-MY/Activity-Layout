@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Travelling to"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtitle"
+        android:layout_alignLeft="@id/subtitle"
+        android:fontFamily="sans-serif-black"
+        android:text="Iceland"
+        android:textColor="@color/brand_turqoise"
+        android:textSize="30sp"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_alignLeft="@id/header"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:width="200dp"
+        android:height="80dp"
+        android:text="01 April -> 05 April"
+        app:backgroundTint="@color/brand_turqoise"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/files"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/date"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/date"
+        android:width="130dp"
+        android:height="80dp"
+        android:text="Files"
+        app:backgroundTint="@color/brand_turqoise"
+        />
+
+    <Button
+        android:id="@+id/Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_alignLeft="@id/date"
+        android:layout_marginRight="13dp"
+        android:height="80dp"
+        android:text="Location"
+        app:backgroundTint="@color/brand_turqoise"
+        />
+
+    <Button
+        android:id="@+id/activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_toRightOf="@id/Location"
+        android:height="80dp"
+        android:text="Activity"
+        app:backgroundTint="@color/brand_turqoise"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Location"
+        android:layout_marginTop="92dp"
+        android:alpha="1"
+        android:contentDescription="@string/todo"
+        android:maxHeight="100dp"
+        android:scaleType="centerCrop"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+</RelativeLayout>
